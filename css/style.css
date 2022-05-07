@@ -180,19 +180,8 @@ a {
    color: white;
 }
 
-.porfolio {
-
-}
-
 .container-right__porfolio {
    margin-bottom: 30px;
-}
-
-.porfolio__title {
-   /* margin-bottom: 20px;
-   font-size: var(--font-h3); */
-}
-.porfolio__list {
 }
 
 .porfolio__item:not(:last-child) {
@@ -203,29 +192,7 @@ a {
    margin-bottom: 5px;
    font-weight: 600;
 }
-.portfolio__link {
-}
-.experience-work {
 
-}
-.container-right__experience-work {
-}
-.education.container-right__education {
-}
-.experience-work__title {
-}
-.experience-work__subtitle {
-}
-.experience-work__time {
-}
-.experience-work__list {
-}
-.education__title {
-}
-.education__subtitle {
-}
-.education__time {
-}
 .education__descr {
    margin-bottom: 5px;
 }
