@@ -2,46 +2,46 @@
    font-family: 'Montserrat';
    src: local('Montserrat Regular'), local('MontserratRegular');
    src: url('../fonts/MontserratRegular.woff2') format('woff2'),
-        url('../fonts/MontserratRegular.woff') format('woff');
+      url('../fonts/MontserratRegular.woff') format('woff');
    font-weight: 400;
    font-display: swap;
- }
- 
- @font-face {
+}
+
+@font-face {
    font-family: 'Montserrat';
    src: local('Montserrat Medium'), local('MontserratMedium');
    src: url('../fonts/MontserratMedium.woff2') format('woff2'),
-        url('../fonts/MontserratMedium.woff') format('woff');
+      url('../fonts/MontserratMedium.woff') format('woff');
    font-weight: 500;
    font-display: swap;
- }
- 
- @font-face {
+}
+
+@font-face {
    font-family: 'Montserrat';
    src: local('Montserrat SemiBold'), local('MontserratSemiBold');
    src: url('../fonts/MontserratSemiBold.woff2') format('woff2'),
-        url('../fonts/MontserratSemiBold.woff') format('woff');
+      url('../fonts/MontserratSemiBold.woff') format('woff');
    font-weight: 600;
    font-display: swap;
- }
- 
- @font-face {
+}
+
+@font-face {
    font-family: 'Montserrat';
    src: local('Montserrat Bold'), local('MontserratBold');
    src: url('../fonts/MontserratBold.woff2') format('woff2'),
-        url('../fonts/MontserratBold.woff') format('woff');
+      url('../fonts/MontserratBold.woff') format('woff');
    font-weight: 700;
    font-display: swap;
- }
- 
- @font-face {
+}
+
+@font-face {
    font-family: 'Montserrat';
    src: local('Montserrat ExtraBold'), local('MontserratExtraBold');
    src: url('../fonts/MontserratExtraBold.woff2') format('woff2'),
-        url('../fonts/MontserratExtraBold.woff') format('woff');
+      url('../fonts/MontserratExtraBold.woff') format('woff');
    font-weight: 800;
    font-display: swap;
- }
+}
 
 
 :root {
@@ -53,19 +53,19 @@
 * {
    box-sizing: border-box;
    margin: 0;
-   padding: 0;   
+   padding: 0;
 }
 
 body {
-   width: 100%;
-   height: 100vh;
+   min-width: 100%;
+   min-height: 100vh;
    font-family: 'Montserrat', 'Arial', sans-serif;
    font-size: 16px;
    background-image: url(../img/autumn.svg);
    border-style: contain;
 }
 
-ul,ol,li {
+ul, ol, li {
    list-style: none;
 }
 
@@ -108,12 +108,11 @@ a {
 
 /* work */
 .container {
-   position: relative;
-   top: 10%;
    display: flex;
    width: 100%;
    max-width: 1000px;
    margin: 0 auto;
+   margin-top: 15px;
    box-shadow: -1px 3px 9px #00000045;
 }
 
@@ -124,11 +123,10 @@ a {
 
 .container-right {
    padding: 50px;
-   /* border: 1px solid rgb(239 239 239); */
    background-color: #f9f9f9;
 }
 
-.container-right__block {
+.container-right__item:not(:last-child) {
    margin-bottom: 30px;
 }
 
@@ -146,7 +144,6 @@ a {
    font-size: 2.5rem;
    font-weight: 400;
    color: bisque;
-   /* white-space: pre-wrap; */
 }
 
 .container-left__subtitle {
@@ -195,4 +192,19 @@ a {
 
 .education__descr {
    margin-bottom: 5px;
+}
+
+.education__item {
+   margin-bottom: 10px;
+}
+
+.education__item:not(:last-child) {
+   margin-bottom: 15px;
+}
+
+.education__list-title {
+   margin-bottom: 10px;
+   font-weight: 400;
+   color: #939393;
+    font-size: 14px;
 }
